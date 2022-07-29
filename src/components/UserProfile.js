@@ -1,5 +1,11 @@
-const UserProfile = ()=>{
-    return <h2>User Profile Loaded!</h2>
+import UserInfo from './UserInfo'
+
+const UserProfile = () => {
+    return (
+      <div>
+          <UserInfo />
+      </div>
+    )
 }
 
-export default UserProfile
+export default UserProfile;
