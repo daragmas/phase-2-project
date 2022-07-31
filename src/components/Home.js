@@ -5,7 +5,6 @@ const Home = ()=>{
         <div>
             <h1>It works!</h1>
             <UserProfile/>
-            <p>testing if pushing/pulling works</p>
         </div>
         
 
