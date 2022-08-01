@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom"
 
 const NavBar = () => {
 
-    const { user, isAuthenticated} = useAuth0()
+    const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
     console.log('user ', user)
 
-    const LoginButton = ()=>{
-        const {loginWithRedirect} = useAuth0()
-        return <button onClick={()=> loginWithRedirect()}>Log In</button>
+    const LoginButton = () => {
+        const { loginWithRedirect } = useAuth0()
+        exports.onExecutePostUserRegistration = async (e) => { console.log('new user') }
+        return <button onClick={() => loginWithRedirect()}>Log In</button>
     }
 
     const LogoutButton = () => {
@@ -23,12 +24,13 @@ const NavBar = () => {
     };
 
     return (
-    <div>
-        <h1>NAVBAR!</h1>
-        {isAuthenticated? <LogoutButton/>:<LoginButton/>}
-        <NavLink to='/test'>Test Page</NavLink>
-        <NavLink to='/'> Home </NavLink>
-    </div>
+        <div>
+            <h1>NAVBAR!</h1>
+            {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+            <NavLink to='/test'>Test Page</NavLink>
+            <NavLink to='/'> Home </NavLink>
+            <NavLink to='/user/1'> Test User Nav </NavLink>
+        </div>
     )
 
 }
