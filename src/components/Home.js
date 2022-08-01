@@ -10,7 +10,7 @@ const Home = ({curUser})=>{
 
     return(
         <div>
-            <UserProfile/>
+            <h1>check out this awesome homepage</h1>
         </div>
 
 

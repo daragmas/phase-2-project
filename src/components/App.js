@@ -18,7 +18,7 @@ function App() {
       < Routes >
         <Route exact path='/' element={<Home curUser={currentUser}/>}></Route>
         <Route path='/test/' element={<Test />}></Route>
-        <Route path='/user' element={<Home/>}>
+        <Route path='/user' element={<UserProfile/>}>
           <Route path=':userId' element={<UserProfile/>}></Route>
         </Route>
       </Routes>
