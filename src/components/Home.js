@@ -10,7 +10,6 @@ const Home = ()=>{
         <div>
             <h1>NavBar Placeholder</h1>          
             <UserProfile/>
-            <p>testing if pushing/pulling works</p>
         </div>
 
 
