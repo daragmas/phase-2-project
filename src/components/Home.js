@@ -1,6 +1,8 @@
 import UserProfile from "./UserProfile"
 
-const Home = ()=>{
+const Home = ({curUser})=>{
+
+    // console.log("Home curUser", curUser)
 
 
 

@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom"
 import { useState } from "react"
 
 const NavBar = ({ onUserChange, curUser }) => {
-    const [currentUserID, setCurrentUserID] = useState()
 
     const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
@@ -13,8 +12,7 @@ const NavBar = ({ onUserChange, curUser }) => {
         const req = await fetch('http://localhost:3001/users/')
         const res = await req.json()
         const currentUserData = res.filter((dbUser) => dbUser.nickname === user.nickname ? dbUser : null)
-        // console.log("currentUserData.id: ", currentUserData[0].id)
-        setCurrentUserID(currentUserData[0].id)
+        onUserChange(currentUserData[0])
     }
 
     const LoginButton = () => {
@@ -32,11 +30,10 @@ const NavBar = ({ onUserChange, curUser }) => {
     };
 
     if (user) {
-        onUserChange(user)
         getCurrentUserID() 
-        console.log("currentUserID: ", currentUserID)  
     }
 
+    // console.log("curUser" ,curUser)
     
 
     return (
@@ -46,7 +43,7 @@ const NavBar = ({ onUserChange, curUser }) => {
             <NavLink to='/test'>Test Page</NavLink>
             <NavLink to='/'> Home </NavLink>
             <NavLink to='/user/1'> Test User Nav </NavLink>
-            {currentUserID? <NavLink to={`/user/${currentUserID}`}>Profile</NavLink>:null}
+            {curUser? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink>:null}
         </div>
     )
 

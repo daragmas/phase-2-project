@@ -1,8 +1,8 @@
 import ImageCard from './ImageCard'
 
-const UserPics = () => {
+const UserPics = ({userId}) => {
   return(
-    <ImageCard />
+    <ImageCard userId={userId}/>
   )
 }
 
