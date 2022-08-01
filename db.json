@@ -6,7 +6,7 @@
       "nickname": "theadmin",
       "picture":"https://image.petmd.com/files/2022-06/golden-retriever.jpg",
       "links":["example.com","google.com"],
-      "images":[1],
+      "images":[1,2,3],
       "favorite-images":[],
       "favorite-users":[]
     },
