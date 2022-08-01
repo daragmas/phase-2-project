@@ -48,3 +48,11 @@
   width: 20%
 
 }
+
+.ImageCard {
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  border: 2px solid black;
+  display: inline-block;
+}
