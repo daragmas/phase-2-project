@@ -1,8 +1,7 @@
-const FavoritesButton = ({userImages}) => {
+const FavoritesButton = ({image}) => {
   return(
     <>
-      {console.log(userImages)}
-      <span className='button' onClick={() => alert(`liked photo #${userImages.id}`)}>♥</span>
+      <span className='button' onClick={() => alert(`liked photo #${image.id}`)}>♥</span>
     </>
   )
 }

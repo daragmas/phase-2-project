@@ -20,7 +20,7 @@ const ImageCard = () => {
         return (
           <>
             <img className='ImageCard' key={image.source} src={image.source}/>
-            <FavoritesButton userImages={userImages}/>
+            <FavoritesButton image={image}/>
           </>
         )
       })}
