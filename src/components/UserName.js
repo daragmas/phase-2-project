@@ -1,6 +1,8 @@
 const UserName = () => {
   return(
-    <h2>USERNAME</h2>
+    <div className="flex">
+      <h2>USERNAME</h2>
+    </div>
   )
 }
 

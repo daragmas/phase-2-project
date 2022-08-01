@@ -1,6 +1,6 @@
 const UserFaves = () => {
   return(
-    <div>
+    <div className="flex">
       <li>User's Selected Favs</li>
       <li>User's Selected Favs</li>
       <li>User's Selected Favs</li>

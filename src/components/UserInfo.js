@@ -6,12 +6,17 @@ import Links from './Links'
 
 const UserInfo = () => {
   return(
-    <div>
-      <ProfPic />
-      <UserName />
-      <Links />
-      <UserFaves />
-    </div>
+    <>
+      <div>
+        <ProfPic />
+        <UserName />
+        <Links />
+        <UserFaves />
+      </div>
+      <div>
+        
+      </div>
+    </>
   )
 }
 
