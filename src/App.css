@@ -61,11 +61,16 @@
   transform: scale(1.1);
 }
 
-.button: {
+/* .button: {
   transition: transform 0.5s;
-}
+} */
 
 .button:hover {
   transform: scale(1.1);
   cursor:pointer;
+}
+
+.search-image{
+  height:200px;
+  width:auto;
 }
