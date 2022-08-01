@@ -5,11 +5,11 @@ const NavBar = () => {
 
     const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
-    console.log('user ', user)
+    // console.log('user ', user)
 
     const LoginButton = () => {
         const { loginWithRedirect } = useAuth0()
-        exports.onExecutePostUserRegistration = async (e) => { console.log('new user') }
+        // exports.onExecutePostUserRegistration = async (e) => { console.log('new user') }
         return <button onClick={() => loginWithRedirect()}>Log In</button>
     }
 
