@@ -19,7 +19,6 @@ const UserProfile = () => {
     }, [])
 
 
-
     return (
         <div>
             <UserInfo userData={userData} />
