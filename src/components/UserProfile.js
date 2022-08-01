@@ -1,31 +1,36 @@
 import UserInfo from './UserInfo'
 import UserPics from './UserPics'
-import {useState, useEffect} from 'react'
-import {useParams} from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 
 const UserProfile = () => {
     const [userData, setUserData] = useState([])
     let params = useParams()
-    console.log(params.userId)
+    console.log("userId from params:", params.userId)
 
     useEffect(() => {
         const getData = async () => {
-          let req = await fetch(`http://localhost:3001/users/${params.userId}`)
-          let res = await req.json()
-          setUserData(res)
-
+            let req = await fetch(`http://localhost:3001/users/${params.userId}`)
+            let res = await req.json()
+            setUserData(res)
         }
         getData()
-    },[])
+    }, [])
 
+<<<<<<< HEAD
 // console.log(userData)
+=======
+    
+
+    console.log(userData)
+>>>>>>> 1790f956e562b593b72941272b9e88ca2d545330
 
     return (
-      <div>
-          <UserInfo userData={userData}/>
-          <UserPics />
-      </div>
+        <div>
+            <UserInfo userData={userData} />
+            <UserPics />
+        </div>
     )
 }
 

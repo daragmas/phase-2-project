@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const Links = ({userLinks =[]}) => {
+=======
+const Links = ({userLinks = []}) => {
+>>>>>>> 1790f956e562b593b72941272b9e88ca2d545330
   // console.log(userLinks)
   return(
     <div className="flex">
