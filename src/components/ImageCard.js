@@ -15,13 +15,15 @@ const ImageCard = ({userId}) => {
 
 
   return(
-    <div>
+    <div className='imageContainer'>
       {userImages.map((image) => {
         return (
-          <>
+          <div className='divImageCard'>
+          
             <img className='ImageCard' key={image.source} src={image.source}/>
+
             <FavoritesButton image={image}/>
-          </>
+          </div>
         )
       })}
     </div>

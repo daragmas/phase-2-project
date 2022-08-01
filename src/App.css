@@ -49,23 +49,39 @@
 }
 
 .ImageCard {
-  height: 200px;
-  width: 200px;
+  width: 250px;
+  height: auto;
   margin: 5px;
-  border: 2px solid black;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   transition: transform 0.5s;
+  z-index: -1;
+}
+
+.divImageCard {
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .ImageCard:hover {
   transform: scale(1.1);
+
 }
 
-.button: {
-  transition: transform 0.5s;
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+
+.button {
+  display: flex;
+  justify-content: center;
+  z-index:1;
+}
 .button:hover {
-  transform: scale(1.1);
   cursor:pointer;
 }
