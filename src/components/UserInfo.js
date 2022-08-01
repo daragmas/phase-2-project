@@ -13,9 +13,7 @@ const UserInfo = () => {
         <Links />
         <UserFaves />
       </div>
-      <div>
-        
-      </div>
+    
     </>
   )
 }
