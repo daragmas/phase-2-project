@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+#ProfPic {
+  width: 200px;
+  height:auto;
+  border-radius: 50%;
+}
+
+.flex {
+  display: inline-block;
+  width: 20%
+
+}
