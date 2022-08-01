@@ -2,7 +2,7 @@ import '../App.css';
 import Home from './Home';
 import Test from './Test';
 import NavBar from './Navbar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router-dom';
 import UserProfile from './UserProfile';
 
 
