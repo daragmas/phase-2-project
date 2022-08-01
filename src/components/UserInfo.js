@@ -5,6 +5,9 @@ import Links from './Links'
 
 
 const UserInfo = ({userData}) => {
+  console.log('UserInfo UserData: ', userData)
+  if(userData==[]) return <h1>Loading...</h1>
+
   return(
     <>
     {console.log(userData.nickname)}

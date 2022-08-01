@@ -1,4 +1,4 @@
-const Links = ({userLinks}) => {
+const Links = ({userLinks = []}) => {
   // console.log(userLinks)
   return(
     <div className="flex">
