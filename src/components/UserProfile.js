@@ -19,7 +19,7 @@ const UserProfile = () => {
         getData()
     },[])
 
-console.log(userData)
+// console.log(userData)
 
     return (
       <div>

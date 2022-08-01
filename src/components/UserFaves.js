@@ -1,10 +1,13 @@
-const UserFaves = () => {
+const UserFaves = ({userFavorites}) => {
   return(
     <div className="flex">
-      <li>User's Selected Favs</li>
-      <li>User's Selected Favs</li>
-      <li>User's Selected Favs</li>
-      <li>User's Selected Favs</li>
+    {userFavorites.map((fav) => {
+      return(
+        <li key={fav}>
+          <a>{fav}</a>
+        </li>
+      )})}
+
     </div>
   )
 }
