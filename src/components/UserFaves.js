@@ -1,4 +1,4 @@
-const UserFaves = ({userFavorites}) => {
+const UserFaves = ({userFavorites=[]}) => {
   return(
     <div className="flex">
     {userFavorites.map((fav) => {

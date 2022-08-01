@@ -18,13 +18,10 @@ const UserProfile = () => {
         getData()
     }, [])
 
-<<<<<<< HEAD
 // console.log(userData)
-=======
     
 
     console.log(userData)
->>>>>>> 1790f956e562b593b72941272b9e88ca2d545330
 
     return (
         <div>
