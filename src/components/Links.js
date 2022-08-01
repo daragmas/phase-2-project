@@ -1,5 +1,4 @@
 const Links = ({userLinks = []}) => {
-  // console.log(userLinks)
   return(
     <div className="flex">
     {userLinks.map((link) => {
