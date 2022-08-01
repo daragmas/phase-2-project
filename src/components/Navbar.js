@@ -38,9 +38,8 @@ const NavBar = ({ onUserChange, curUser }) => {
 
     return (
         <div>
-            <h1>NAVBAR!</h1>
             {isAuthenticated ? <LogoutButton /> : <LoginButton />}
-            <NavLink to='/test'>Test Page</NavLink>
+            <NavLink to='/search'>🔎</NavLink>
             <NavLink to='/'> Home </NavLink>
             <NavLink to='/user/1'> Test User Nav </NavLink>
             {curUser? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink>:null}

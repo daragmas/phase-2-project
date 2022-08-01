@@ -85,3 +85,8 @@
 .button:hover {
   cursor:pointer;
 }
+
+.search-image{
+  height:200px;
+  width:auto;
+}
