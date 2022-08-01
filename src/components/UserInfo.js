@@ -4,16 +4,17 @@ import UserName from './UserName'
 import Links from './Links'
 
 
-const UserInfo = () => {
+const UserInfo = ({userData}) => {
   return(
     <>
+    {console.log(userData.nickname)}
       <div>
-        <ProfPic />
-        <UserName />
-        <Links />
-        <UserFaves />
+        <ProfPic userProfPic={userData.picture}/>
+        <UserName userNickname={userData.nickname}/>
+        <Links userLinks={userData.links}/>
+        <UserFaves userData={userData}/>
       </div>
-    
+
     </>
   )
 }

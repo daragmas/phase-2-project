@@ -1,10 +1,14 @@
-const Links = () => {
+const Links = ({userLinks}) => {
+  // console.log(userLinks)
   return(
     <div className="flex">
-      <a>top links</a><br/>
-      <a>top links</a><br/>
-      <a>top links</a><br/>
-      <a>top links</a><br/>
+    {userLinks.map((link) => {
+      return(
+        <li>
+          <a href={link}>{link}</a>
+        </li>
+      )})}
+
     </div>
   )
 }

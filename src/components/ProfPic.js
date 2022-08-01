@@ -1,7 +1,9 @@
-const ProfPic = () => {
+const ProfPic = ({userProfPic}) => {
   return(
     <div className="flex">
-      <img id='ProfPic' src="https://image.petmd.com/files/2022-06/golden-retriever.jpg" alt="goodboi"/>
+      <img id='ProfPic' src={userProfPic} alt="goodboi"/>
+      
+
     </div>
   )
 }

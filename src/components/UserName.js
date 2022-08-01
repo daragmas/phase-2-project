@@ -1,7 +1,7 @@
-const UserName = () => {
+const UserName = ({userNickname}) => {
   return(
     <div className="flex">
-      <h2>USERNAME</h2>
+      <h2>{userNickname}</h2>
     </div>
   )
 }
