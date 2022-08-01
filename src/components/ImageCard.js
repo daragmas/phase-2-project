@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import FavoritesButton from './FavoritesButton'
 
 const ImageCard = () => {
   const [userImages, setUserImages] = useState([])
@@ -17,7 +18,10 @@ const ImageCard = () => {
     <div>
       {userImages.map((image) => {
         return (
-          <img className='ImageCard' src={image.source}/>
+          <>
+            <img className='ImageCard' key={image.source} src={image.source}/>
+            <FavoritesButton userImages={userImages}/>
+          </>
         )
       })}
     </div>
