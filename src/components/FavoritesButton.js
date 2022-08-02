@@ -12,7 +12,7 @@ const FavoritesButton = ({image}) => {
 
 const handleClick = async () => {
   if(!isAuthenticated){
-    return loginWithRedirect({appState:{target:'redirectURL'}})
+    return loginWithRedirect() //can't figure out how to redirect back to the page the user was on after logging in
   }
   const newLikes = liked? image.timesFavorited - 1: image.timesFavorited +1
   const req = await fetch(`http://localhost:3001/images/${image.id}`, {

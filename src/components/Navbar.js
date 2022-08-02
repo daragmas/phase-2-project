@@ -6,7 +6,7 @@ const NavBar = ({ onUserChange, curUser }) => {
 
     const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
-    // console.log('user ', user)
+    console.log('user ', user) 
 
     const addNewUser = async ()=>{
         const newUser={
@@ -23,20 +23,22 @@ const NavBar = ({ onUserChange, curUser }) => {
             headers:{'Content-type':'application/json'},
             body:JSON.stringify(newUser)
         })
-        onUserChange(newUser)
+        return onUserChange(newUser)
     }
 
     const getCurrentUserID = async () => {
         const req = await fetch('http://localhost:3001/users/')
         const res = await req.json()
         const currentUserData = res.filter((dbUser) => dbUser.nickname === user.nickname ? dbUser : null)
-        if(!currentUserData[0]) addNewUser()
-        onUserChange(currentUserData[0])
+        console.log(currentUserData)
+        if(!currentUserData[0]) return addNewUser()
+        return (currentUserData[0])
     }
 
     useEffect(()=>{
         if (user) {
-            getCurrentUserID()
+            onUserChange(getCurrentUserID())
+            console.log(curUser)
         }
     },[])
 
