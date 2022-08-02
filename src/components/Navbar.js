@@ -6,7 +6,7 @@ const NavBar = ({ onUserChange, curUser }) => {
 
     const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
-    console.log('user ', user)
+    // console.log('user ', user)
 
     const addNewUser = async ()=>{
         const newUser={
@@ -18,7 +18,6 @@ const NavBar = ({ onUserChange, curUser }) => {
             "favoriteImages": [],
             "favoriteUsers": []
         }
-        console.log('New User:', newUser)
         const req = await fetch('http://localhost:3001/users/',{
             method:'POST',
             headers:{'Content-type':'application/json'},
@@ -31,7 +30,6 @@ const NavBar = ({ onUserChange, curUser }) => {
         const req = await fetch('http://localhost:3001/users/')
         const res = await req.json()
         const currentUserData = res.filter((dbUser) => dbUser.nickname === user.nickname ? dbUser : null)
-        console.log('CurrentUserData',currentUserData)
         if(!currentUserData[0]) addNewUser()
         onUserChange(currentUserData[0])
     }
@@ -41,9 +39,6 @@ const NavBar = ({ onUserChange, curUser }) => {
             getCurrentUserID()
         }
     },[])
-    // if (user) {
-    //     getCurrentUserID()
-    // }
 
     const LoginButton = () => {
         const { loginWithRedirect } = useAuth0()
@@ -61,7 +56,7 @@ const NavBar = ({ onUserChange, curUser }) => {
 
     
 
-    console.log("curUser" ,curUser)
+    // console.log("curUser" ,curUser)
     
 
     return (
