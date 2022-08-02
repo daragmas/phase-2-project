@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 
-const UserProfile = () => {
+const UserProfile = ({ curUser }) => {
     const [userData, setUserData] = useState([])
     let params = useParams()
     // console.log("userId from params:", params.userId)
+    console.log(curUser)
 
     useEffect(() => {
         const getData = async () => {

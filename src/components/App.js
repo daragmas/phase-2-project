@@ -4,22 +4,32 @@ import Search from './Search';
 import NavBar from './Navbar';
 import { Route, Routes } from 'react-router-dom';
 import UserProfile from './UserProfile';
-import {useState} from 'react'
+import { useState } from 'react'
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
-const App = async () => {
-  const [currentUser,setCurrentUser] = useState()
-  // console.log('currentUser:',currentUser)
+
+const App = () => {
+
+  const [currentUser, setCurrentUser] = useState()
+  const {user} = useAuth0
+  console.log(user)
+
+  const handleUserChange = (curUser) => {
+    setCurrentUser(curUser)
+    console.log('UserChange')
+  }
+
 
   return (
     <div>
-      <NavBar onUserChange={setCurrentUser} curUser={currentUser}/>
+      <NavBar onUserChange={handleUserChange} curUser={currentUser} />
       < Routes >
-        <Route exact path='/' element={<Home curUser={currentUser}/>}></Route>
+        <Route exact path='/' element={<Home />}></Route>
         <Route path='/search/' element={<Search />}></Route>
-        <Route path='/user' element={<UserProfile/>}>
-          <Route path=':userId' element={<UserProfile/>}></Route>
+        <Route path='/user' element={<UserProfile curUser={currentUser} />}>
+          <Route path=':userId' element={<UserProfile />}></Route>
         </Route>
       </Routes>
     </div>
