@@ -7,3 +7,23 @@
     > set up dynamic routing to user profiles
     > watermarker
     > more stuff
+
+
+### Component Tree:
+
+<App />
+		<Navbar />
+				    <Search />
+				    <Favorites />
+				    <Login />
+		<Home />
+				<UserProfile />
+						<UserInfo />
+						        <ProfPic />
+						        <UserName />
+						        <Links />
+						        <UserFaves />
+						<UserPics />
+								<ImageCard />
+							            <FavoritesButton />
+							            <Comments />
