@@ -34,31 +34,9 @@
       "favoriteUsers": [
         1
       ]
-    },
-    {
-      "email": "natesothercodebot@yahoo.com",
-      "nickname": "natesothercodebot",
-      "picture": "https://s.gravatar.com/avatar/33f659062ee1e5fda5395f21972d47e4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fna.png",
-      "links": [],
-      "images": [],
-      "favoriteImages": [],
-      "favoriteUsers": [],
-      "id": 3
-    },
-    {
-      "email": "hello@vittles.com",
-      "nickname": "rmdashrfv",
-      "picture": "https://avatars.githubusercontent.com/u/7320418?v=4",
-      "links": [
-        "https://github.com/rmdashrfv"
-      ],
-      "images": [
-        12
-      ],
-      "favoriteImages": [],
-      "favoriteUsers": [],
-      "id": 4
     }
+
+
   ],
   "images": [
     {
@@ -95,8 +73,7 @@
     {
       "source": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
       "tags": [
-        "new pup",
-        "test"
+        "new pup", "test"
       ],
       "timesFavorited": 0,
       "imageOwner": 1,
@@ -116,23 +93,11 @@
     {
       "timesFavorited": 0,
       "source": "https://mario.wiki.gallery/images/thumb/d/da/RoySSBU.png/1200px-RoySSBU.png",
-      "tags": [
-        "top-tier"
-      ],
+      "tags": ["top-tier"],
       "id": 11,
       "imageOwner": 4
-    },
-    {
-      "imageOwner": 2,
-      "timesFavorited": 0,
-      "tags": [
-        "does",
-        "image",
-        "owner",
-        "work?"
-      ],
-      "source": "test",
-      "id": 12
     }
+
+
   ]
 }

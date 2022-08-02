@@ -105,3 +105,18 @@
   height:200px;
   width:auto;
 }
+
+.homeImageDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-content: stretch;
+  background-color: black;
+}
+
+.homeImage {
+  height: 300px;
+  width: auto;
+
+}
