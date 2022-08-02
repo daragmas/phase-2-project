@@ -1,8 +1,8 @@
 const ProfPic = ({userProfPic}) => {
   return(
-    <div className="flex">
+    <div>
       <img id='ProfPic' src={userProfPic} alt="goodboi"/>
-      
+
 
     </div>
   )

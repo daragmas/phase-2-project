@@ -1,6 +1,6 @@
 const UserName = ({userNickname}) => {
   return(
-    <div className="flex">
+    <div>
       <h2>{userNickname}</h2>
     </div>
   )

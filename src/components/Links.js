@@ -1,6 +1,6 @@
 const Links = ({userLinks = []}) => {
   return(
-    <div className="flex">
+    <div>
     {userLinks.map((link) => {
       return(
         <li key={link}>

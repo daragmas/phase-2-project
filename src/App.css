@@ -43,9 +43,14 @@
   border-radius: 50%;
 }
 
-.flex {
-  display: inline-block;
-  width: 200px;
+.userInfoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* align-content: space-around; */
+  margin: 20px;
+  background-color: #CBC4CD;
+
 }
 
 .ImageCard {
@@ -63,6 +68,7 @@
   display:flex;
   align-items: flex-end;
   justify-content: center;
+  z-index: 1;
 }
 
 .ImageCard:hover {
@@ -74,6 +80,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: #9E9E9E;
+  z-index: -2;
 }
 
 

@@ -10,7 +10,7 @@ const UserInfo = ({userData}) => {
 
   return(
     <>
-      <div>
+      <div className='userInfoDiv'>
         <ProfPic userProfPic={userData.picture}/>
         <UserName userNickname={userData.nickname}/>
         <Links userLinks={userData.links}/>
