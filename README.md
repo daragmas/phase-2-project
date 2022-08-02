@@ -18,7 +18,7 @@
 			   <Login />
 		<Home />
 				<UserProfile />
-						<UserInfo />
+						<UserInfo />  => //POST
 						    <ProfPic />
 						    <UserName />
 						    <Links />

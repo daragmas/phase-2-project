@@ -18,7 +18,9 @@ const UserProfile = () => {
         getData()
     }, [])
 
-    // console.log("userData:", userData)
+function handleAddPhoto(newPhoto) {
+  console.log(newPhoto)
+}
 
     return (
         <div>
