@@ -44,7 +44,19 @@
       "favoriteImages": [],
       "favoriteUsers": [],
       "id": 3
+    },
+    {
+      "email": "hello@vittles.com",
+      "nickname": "rmdashrfv",
+      "picture": "https://avatars.githubusercontent.com/u/7320418?v=4",
+      "links": ["https://github.com/rmdashrfv"],
+      "images": [12],
+      "favoriteImages": [],
+      "favoriteUsers": [],
+      "id": 4
     }
+    
+
   ],
   "images": [
     {
@@ -81,7 +93,7 @@
     {
       "source": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
       "tags": [
-        "new pup, test"
+        "new pup", "test"
       ],
       "timesFavorited": 0,
       "imageOwner": 1,
@@ -100,10 +112,12 @@
     },
     {
       "timesFavorited": 0,
-      "source": "https://images.dog.ceo/breeds/hound-plott/hhh-23456.jpeg",
-      "tags": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "source": "https://mario.wiki.gallery/images/thumb/d/da/RoySSBU.png/1200px-RoySSBU.png",
+      "tags": ["top-tier"],
       "id": 11,
-      "imageOwner": 1
+      "imageOwner": 4
     }
+
+    
   ]
 }

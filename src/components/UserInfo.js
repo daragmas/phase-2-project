@@ -8,15 +8,16 @@ import {useState} from 'react'
 const UserInfo = ({userData, onNewPhoto}) => {
   
   const [newPhoto, setNewPhoto] = useState({
-    imageOwner: userData.id, timesFavorited: 0
+    imageOwner: userData.id, timesFavorited: 0, tags:[]
 })
 
   if(userData==[]) return <h1>Loading...</h1>
 
   const handleNewPhotoInfo = (e)=>{
     const key = e.target.name
-    const value = e.target.value
+    const value = e.target.value.includes(',') ? (e.target.value).split(','):e.target.value
     setNewPhoto({...newPhoto, [key]:value })
+    console.log(newPhoto)
   }
 
   const newPhotoBtn = (e) => {

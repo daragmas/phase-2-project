@@ -9,7 +9,7 @@ const UserProfile = ({ curUser }) => {
     const [replaceThis, setReplaceThis] = useState()
     let params = useParams()
     // console.log("userId from params:", params.userId)
-    console.log(curUser)
+    console.log('currentUser',curUser)
 
     useEffect(() => {
         const getData = async () => {
