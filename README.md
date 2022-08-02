@@ -13,17 +13,17 @@
 
 <App />
 		<Navbar />
-				    <Search />
-				    <Favorites />
-				    <Login />
+				 <Search />
+	       <Favorites />
+			   <Login />
 		<Home />
 				<UserProfile />
 						<UserInfo />
-						        <ProfPic />
-						        <UserName />
-						        <Links />
-						        <UserFaves />
+						    <ProfPic />
+						    <UserName />
+						    <Links />
+				        <UserFaves />
 						<UserPics />
 								<ImageCard />
-							            <FavoritesButton />
-							            <Comments />
+					          <FavoritesButton />
+					          <Comments />

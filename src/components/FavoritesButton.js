@@ -8,7 +8,7 @@ const FavoritesButton = ({image}) => {
   const EMPTY_HEART = '♡'
   const FULL_HEART = '♥'
   // let likeCount = image.timesFavorited
-  console.log(likeCount)
+  // console.log(likeCount)
 
 const handleClick = () => {
 
@@ -22,7 +22,7 @@ const handleClick = () => {
       setLikeCount((likeCount) => likeCount - 1)
     }
 
-    console.log(likeCount)
+    // console.log(likeCount)
     let req = await fetch(`http://localhost:3001/images/${image.id}`, {
       method: 'PATCH',
       headers: {

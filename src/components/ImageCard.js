@@ -18,9 +18,9 @@ const ImageCard = ({userId}) => {
     <div className='imageContainer'>
       {userImages.map((image) => {
         return (
-          <div className='divImageCard'>
-          
-            <img className='ImageCard' key={image.source} src={image.source}/>
+          <div className='divImageCard' key={image.id}>
+
+            <img className='ImageCard' src={image.source}/>
 
             <FavoritesButton image={image}/>
           </div>

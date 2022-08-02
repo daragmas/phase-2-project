@@ -34,19 +34,6 @@
       "favoriteUsers": [
         1
       ]
-<<<<<<< HEAD
-=======
-    },
-    {
-      "email": "natesothercodebot@yahoo.com",
-      "nickname": "natesothercodebot",
-      "picture": "https://s.gravatar.com/avatar/33f659062ee1e5fda5395f21972d47e4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fna.png",
-      "links": [],
-      "images": [],
-      "favoriteImages": [],
-      "favoriteUsers": [],
-      "id": 3
->>>>>>> 4c668cc7ae43cd8a975fc531929bc9e7722b171e
     }
   ],
   "images": [
@@ -57,11 +44,7 @@
         "dog",
         "test"
       ],
-<<<<<<< HEAD
       "timesFavorited": 1,
-=======
-      "timesFavorited": 0,
->>>>>>> 4c668cc7ae43cd8a975fc531929bc9e7722b171e
       "imageOwner": 1
     },
     {
@@ -76,7 +59,27 @@
     },
     {
       "id": 3,
-      "source": "https://images.dog.ceo/breeds/terrier-american/n02093428_2793.jpg",
+      "source": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg",
+      "tags": [
+        "dog",
+        "test",
+        "man"
+      ],
+      "timesFavorited": 0,
+      "imageOwner": 1
+    },
+    {
+      "source": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
+      "tags": [
+        "new pup, test"
+      ],
+      "timesFavorited": 0,
+      "imageOwner": 1,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "source": "https://www.aaha.org/contentassets/e3033f0ae87246cbb1ef8136c13d508f/imagehywzk.png",
       "tags": [
         "dog",
         "test",

@@ -47,9 +47,16 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* align-content: space-around; */
   margin: 20px;
   background-color: #CBC4CD;
+  flex-wrap: wrap;
+
+
+}
+
+#newPhotoForm {
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
