@@ -16,8 +16,9 @@ const App = () => {
   const {user} = useAuth0
   console.log(user)
 
-  const handleUserChange = (curUser) => {
-    setCurrentUser(curUser)
+  const handleUserChange = async (curUser) => {
+    const test = await curUser
+    setCurrentUser(test)
     console.log('UserChange')
   }
 

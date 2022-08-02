@@ -6,10 +6,10 @@ const NavBar = ({ onUserChange, curUser }) => {
 
     const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
-    console.log('user ', user) 
+    console.log('user ', user)
 
-    const addNewUser = async ()=>{
-        const newUser={
+    const addNewUser = async () => {
+        const newUser = {
             "email": user.email,
             "nickname": user.nickname,
             "picture": user.picture,
@@ -18,10 +18,10 @@ const NavBar = ({ onUserChange, curUser }) => {
             "favoriteImages": [],
             "favoriteUsers": []
         }
-        const req = await fetch('http://localhost:3001/users/',{
-            method:'POST',
-            headers:{'Content-type':'application/json'},
-            body:JSON.stringify(newUser)
+        const req = await fetch('http://localhost:3001/users/', {
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(newUser)
         })
         return onUserChange(newUser)
     }
@@ -31,16 +31,15 @@ const NavBar = ({ onUserChange, curUser }) => {
         const res = await req.json()
         const currentUserData = res.filter((dbUser) => dbUser.nickname === user.nickname ? dbUser : null)
         console.log(currentUserData)
-        if(!currentUserData[0]) return addNewUser()
+        if (!currentUserData[0]) return addNewUser()
         return (currentUserData[0])
     }
 
-    useEffect(()=>{
-        if (user) {
-            onUserChange(getCurrentUserID())
-            console.log(curUser)
-        }
-    },[])
+    useEffect(() => {
+        onUserChange(getCurrentUserID())
+        console.log(curUser)
+
+    }, [isAuthenticated])
 
     const LoginButton = () => {
         const { loginWithRedirect } = useAuth0()
@@ -56,18 +55,18 @@ const NavBar = ({ onUserChange, curUser }) => {
         );
     };
 
-    
+
 
     // console.log("curUser" ,curUser)
-    
+
 
     return (
         <div>
             {isAuthenticated ? <LogoutButton /> : <LoginButton />}
             <NavLink to='/search'>🔎</NavLink>
             <NavLink to='/'> Home </NavLink>
-            <NavLink to='/user/1'> Test User Nav </NavLink>
-            {curUser? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink>:null}
+            {/* <NavLink to='/user/1'> Test User Nav </NavLink> */}
+            {curUser ? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink> : null}
         </div>
     )
 

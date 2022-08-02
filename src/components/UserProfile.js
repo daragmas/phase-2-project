@@ -28,7 +28,7 @@ const UserProfile = ({ curUser }) => {
 
     return (
         <div>
-            <UserInfo userData={userData} onNewPhoto={handleAddPhoto} />
+            <UserInfo userData={userData} onNewPhoto={handleAddPhoto} curUser={curUser} />
             <UserPics userId={params.userId} dummyData={replaceThis} />
         </div>
     )
