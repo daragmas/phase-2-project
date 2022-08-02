@@ -4,11 +4,18 @@
       "id": 1,
       "email": "admin@example.com",
       "nickname": "theadmin",
-      "picture":"https://image.petmd.com/files/2022-06/golden-retriever.jpg",
-      "links":["example.com","google.com"],
-      "images":[1,2,3],
-      "favoriteImages":[],
-      "favoriteUsers":[]
+      "picture": "https://image.petmd.com/files/2022-06/golden-retriever.jpg",
+      "links": [
+        "example.com",
+        "google.com"
+      ],
+      "images": [
+        1,
+        2,
+        3
+      ],
+      "favoriteImages": [],
+      "favoriteUsers": []
     },
     {
       "id": 2,
@@ -20,17 +27,35 @@
         "google.com"
       ],
       "images": [],
-      "favoriteImages": [1, 3],
-      "favoriteUsers": [1]
+      "favoriteImages": [
+        1,
+        3
+      ],
+      "favoriteUsers": [
+        1
+      ]
+    },
+    {
+      "email": "natesothercodebot@yahoo.com",
+      "nickname": "natesothercodebot",
+      "picture": "https://s.gravatar.com/avatar/33f659062ee1e5fda5395f21972d47e4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fna.png",
+      "links": [],
+      "images": [],
+      "favoriteImages": [],
+      "favoriteUsers": [],
+      "id": 3
     }
   ],
   "images": [
     {
       "id": 1,
       "source": "https://image.petmd.com/files/2022-06/golden-retriever.jpg",
-      "tags": ["dog","test"],
-      "timesFavorited":0,
-      "imageOwner":1
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 0,
+      "imageOwner": 1
     },
     {
       "id": 2,
