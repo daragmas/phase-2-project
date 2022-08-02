@@ -14,7 +14,7 @@ const handleClick = async () => {
   if(!isAuthenticated){
     return loginWithRedirect() //can't figure out how to redirect back to the page the user was on after logging in
   }
-  const newLikes = liked? image.timesFavorited - 1: image.timesFavorited +1
+  const newLikes = liked? image.timesFavorited : image.timesFavorited +1
   const req = await fetch(`http://localhost:3001/images/${image.id}`, {
     method: 'PATCH',
     headers: {

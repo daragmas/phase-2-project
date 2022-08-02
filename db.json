@@ -34,6 +34,8 @@
       "favoriteUsers": [
         1
       ]
+<<<<<<< HEAD
+=======
     },
     {
       "email": "natesothercodebot@yahoo.com",
@@ -58,6 +60,7 @@
       "favoriteImages": [],
       "favoriteUsers": [],
       "id": 4
+>>>>>>> 04380564e74e269986f26221991236c597375b71
     }
   ],
   "images": [
@@ -68,7 +71,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 1,
+      "timesFavorited": 0,
       "imageOwner": 1
     },
     {
@@ -78,7 +81,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 0,
+      "timesFavorited": -1,
       "imageOwner": 1
     },
     {
