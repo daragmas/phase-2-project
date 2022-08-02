@@ -24,7 +24,7 @@
       "picture": "https://d1ng1bucl7w66k.cloudfront.net/ghost-blog/2020/11/robot.jpg",
       "links": [
         "example.com",
-        "google.com"
+        "github.com"
       ],
       "images": [],
       "favoriteImages": [
@@ -34,8 +34,6 @@
       "favoriteUsers": [
         1
       ]
-<<<<<<< HEAD
-=======
     },
     {
       "email": "natesothercodebot@yahoo.com",
@@ -46,7 +44,6 @@
       "favoriteImages": [],
       "favoriteUsers": [],
       "id": 3
->>>>>>> 2052b842109f14a1b2fdedd8edc2e771bb293d3f
     }
   ],
   "images": [
@@ -99,6 +96,13 @@
         "man"
       ],
       "timesFavorited": 0,
+      "imageOwner": 1
+    },
+    {
+      "timesFavorited": 0,
+      "source": "https://images.dog.ceo/breeds/hound-plott/hhh-23456.jpeg",
+      "tags": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "id": 11,
       "imageOwner": 1
     }
   ]

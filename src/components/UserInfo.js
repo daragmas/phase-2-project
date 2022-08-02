@@ -5,18 +5,18 @@ import Links from './Links'
 import {useState} from 'react'
 
 
-const UserInfo = ({userData}) => {
-  // console.log('UserInfo UserData: ', userData)
-
-  const [newPhotoURL, setNewPhotoURL] = useState('')
-  const [newPhotoTags, setNewPhotoTags] = useState('')
-  if(userData==[]) return <h1>Loading...</h1>
+const UserInfo = ({userData, onNewPhoto}) => {
   
-  const handleNewPhotoUrl = (e) => {
-    setNewPhotoURL(e.target.value)
-  }
-  const handleNewPhotoTags = (e) => {
-    setNewPhotoTags(e.target.value)
+  const [newPhoto, setNewPhoto] = useState({
+    imageOwner: userData.id, timesFavorited: 0
+})
+
+  if(userData==[]) return <h1>Loading...</h1>
+
+  const handleNewPhotoInfo = (e)=>{
+    const key = e.target.name
+    const value = e.target.value
+    setNewPhoto({...newPhoto, [key]:value })
   }
 
   const newPhotoBtn = (e) => {
@@ -26,13 +26,9 @@ const UserInfo = ({userData}) => {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        source: e.target['url'].value,
-        tags:[e.target['tags'].value],
-        timesFavorited:0,
-        imageOwner: userData.id
-      })
+      body: JSON.stringify(newPhoto)
     });
+    onNewPhoto(newPhoto)
   }
 
   return(
@@ -41,14 +37,14 @@ const UserInfo = ({userData}) => {
         <ProfPic userProfPic={userData.picture}/>
         <UserName userNickname={userData.nickname}/>
         <Links userLinks={userData.links}/>
-        <UserFaves userFavorites={userData.favoriteImages}/>
-
+        {/* <UserFaves userFavorites={userData.favoriteImages}/> */}
+        {/*NOTE: ADD THAT ONLY LOGGED IN USERS CAN ADD PHOTOS */}
         <form id='newPhotoForm' onSubmit={newPhotoBtn}>
           <button type='submit'>New Photo</button>
           <label>Photo Url</label>
-          <input type="text" name="url" onChange={handleNewPhotoUrl} value={newPhotoURL}/>
+          <input type="text" name="source" onChange={handleNewPhotoInfo} value={newPhoto.source}/>
           <label>Tags</label>
-          <input type="text" name="tags" onChange={handleNewPhotoTags} value={newPhotoTags}/>
+          <input type="text" name="tags" onChange={handleNewPhotoInfo} value={newPhoto.tags}/>
         </form>
       </div>
 
