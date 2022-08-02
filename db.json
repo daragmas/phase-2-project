@@ -34,8 +34,6 @@
       "favoriteUsers": [
         1
       ]
-<<<<<<< HEAD
-=======
     },
     {
       "email": "natesothercodebot@yahoo.com",
@@ -46,7 +44,6 @@
       "favoriteImages": [],
       "favoriteUsers": [],
       "id": 3
->>>>>>> 4c668cc7ae43cd8a975fc531929bc9e7722b171e
     }
   ],
   "images": [
@@ -57,11 +54,7 @@
         "dog",
         "test"
       ],
-<<<<<<< HEAD
       "timesFavorited": 1,
-=======
-      "timesFavorited": 0,
->>>>>>> 4c668cc7ae43cd8a975fc531929bc9e7722b171e
       "imageOwner": 1
     },
     {
@@ -71,7 +64,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": -1,
+      "timesFavorited": 0,
       "imageOwner": 1
     },
     {

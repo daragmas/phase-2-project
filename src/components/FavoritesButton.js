@@ -1,39 +1,30 @@
 import {useState} from 'react'
+import { useAuth0 } from '@auth0/auth0-react'
 
 
 const FavoritesButton = ({image}) => {
   const [liked, setLiked] = useState(false)
-  const [likeCount, setLikeCount] = useState(image.timesFavorited)
+  const {isAuthenticated, loginWithRedirect } = useAuth0()
+  // const [likeCount, setLikeCount] = useState(image.timesFavorited)
 
   const EMPTY_HEART = '♡'
   const FULL_HEART = '♥'
-  // let likeCount = image.timesFavorited
-  console.log(likeCount)
 
-const handleClick = () => {
-
-  const changeLike = async () => {
-    // console.log(likeCount)
-    if (liked === true) {
-      // console.log('if')
-      setLikeCount((likeCount) => likeCount + 1)
-    } else {
-      // console.log('else')
-      setLikeCount((likeCount) => likeCount - 1)
-    }
-
-    console.log(likeCount)
-    let req = await fetch(`http://localhost:3001/images/${image.id}`, {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({timesFavorited: likeCount})
-    });
-    let res = await req.json();
-
+const handleClick = async () => {
+  if(!isAuthenticated){
+    return loginWithRedirect({appState:{target:'redirectURL'}})
   }
-  changeLike();
+  const newLikes = liked? image.timesFavorited - 1: image.timesFavorited +1
+  const req = await fetch(`http://localhost:3001/images/${image.id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ timesFavorited: newLikes })
+  });
+  const res = await req.json();
+  console.log(res)
+
   setLiked(!liked)
 }
 

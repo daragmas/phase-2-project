@@ -7,9 +7,9 @@ import UserProfile from './UserProfile';
 import {useState} from 'react'
 
 
-function App() {
-  const [currentUser,setCurrentUser] = useState()
 
+const App = async () => {
+  const [currentUser,setCurrentUser] = useState()
   // console.log('currentUser:',currentUser)
 
   return (
