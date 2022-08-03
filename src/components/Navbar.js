@@ -65,8 +65,8 @@ const NavBar = ({ onUserChange, curUser={} }) => {
             {isAuthenticated ? <LogoutButton /> : <LoginButton />}
             <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/search'>Search 🔎</NavLink>
             <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/'> Home </NavLink>
-            <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/user/1'> Test User Nav </NavLink>
-            {isAuthenticated? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink>:null}
+            {/* <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/user/1'> Test User Nav </NavLink> */}
+            {isAuthenticated ? <NavLink className='navButton' style={{ color: '#E2DCC8' }} to={`/user/${curUser.id}`}>Profile</NavLink>:null}
         </div>
     )
 

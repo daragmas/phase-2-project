@@ -34,6 +34,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,8 +42,10 @@
 
 #ProfPic {
   width: 200px;
-  height: 150px;
+  height: 200px;
+  overflow:hidden;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .userInfoDiv {
@@ -55,10 +58,10 @@
   margin: 0;
 }
 
-.userNickname {
+/* .userNickname {
   /* color: '#E2DCC8';
-  font-variant: 'small-caps'; */
-}
+  font-variant: 'small-caps'; 
+} */
 
 #newPhotoForm {
   display: flex;
@@ -79,7 +82,7 @@
 }
 
 .divImageCard {
-  display:flex;
+  display: flex;
   align-items: flex-end;
   justify-content: center;
   z-index: 1;
@@ -89,7 +92,6 @@
 
 .ImageCard:hover {
   transform: scale(1.05);
-
 }
 
 .imageContainer {
@@ -103,21 +105,19 @@
   z-index: -2;
 }
 
-
 .button {
   display: flex;
-  z-index:1;
+  z-index: 1;
 }
+
 .button:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.search-image{
-  height:200px;
-  width:auto;
+.search-image {
+  height: 200px;
+  width: auto;
 }
-
-
 
 .homeImageDiv {
   display: flex;
@@ -125,7 +125,8 @@
   flex-wrap: wrap;
   gap: 25px 25px;
   justify-content: center;
-
+  width: 100vw;
+  padding: 0
 }
 
 .homeImage {
@@ -141,6 +142,7 @@
 
 .homeScreen {
   background-color: #222831;
+  width:100vw;
 }
 
 .search {
@@ -185,8 +187,9 @@
   display: flex;
   justify-content: space-evenly;
   background-color: #222831;
-  padding: 1%;
+  padding: 1% 0;
   height: auto;
+  width: 100vw;
 }
 
 .navButton {
