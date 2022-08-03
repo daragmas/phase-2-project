@@ -5,7 +5,7 @@ import Links from './Links'
 import { useState } from 'react'
 
 
-const UserInfo = ({ userData, onNewPhoto, curUser }) => {
+const UserInfo = ({ userData=[], onNewPhoto, curUser={} }) => {
 
   const [newPhoto, setNewPhoto] = useState({
     imageOwner: userData.id, timesFavorited: 0, tags: []
