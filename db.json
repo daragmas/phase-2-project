@@ -58,6 +58,16 @@
       "favoriteImages": [],
       "favoriteUsers": [],
       "id": 4
+    },
+    {
+      "email": "zachsoliman1@gmail.com",
+      "nickname": "zachsoliman1",
+      "picture": "https://img.freepik.com/premium-photo/bright-hot-air-balloons-sky-cappadocia-turkey_109800-19009.jpg",
+      "links": [],
+      "images": [],
+      "favoriteImages": [],
+      "favoriteUsers": [],
+      "id": 6
     }
   ],
   "images": [
@@ -168,6 +178,43 @@
       ],
       "id": 16,
       "imageOwner": 1
+    },
+    {
+      "timesFavorited": 29,
+      "source": "https://www.techsmith.com/blog/wp-content/uploads/2016/11/what-is-high-res.jpg",
+      "tags": [
+        "camera"
+      ],
+      "id": 17,
+      "imageOwner": 6
+    },
+    {
+      "timesFavorited": 49,
+      "source": "https://cdn.pixabay.com/index/2022/07/21/13-19-24-950_1440x550.jpg",
+      "tags": [
+        "camera"
+      ],
+      "id": 18,
+      "imageOwner": 6
+    },
+    {
+      "timesFavorited": 45,
+      "source": "https://img4.goodfon.com/wallpaper/nbig/a/1b/chb-foto-doma-nebo.jpg",
+      "tags": [
+        "camera"
+      ],
+      "id": 19,
+      "imageOwner": 6
+    },
+    {
+      "imageOwner": 6,
+      "timesFavorited": 0,
+      "tags": [
+        "island",
+        " ocean"
+      ],
+      "source": "https://www.iliketowastemytime.com/sites/default/files/shipwreck-beach-hd-wallpaper.jpg",
+      "id": 20
     }
   ]
 }
