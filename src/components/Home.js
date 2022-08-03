@@ -35,9 +35,9 @@ const Home = ({curUser})=>{
         <div className='homeImageDiv'>
 
 
-            {homeImage.sort((a,b)=>a.timesFavorited > b.timesFavorited ? -1: 1).map((image) => {
+            {homeImage.sort((a,b)=>a.timesFavorited > b.timesFavorited ? -1: 1).map((image, index) => {
               return(
-              <NavLink to={`user/${image.imageOwner}`}><img className='homeImage' src={image.source} key={image.id}/></NavLink>
+              <NavLink key={index} to={`user/${image.imageOwner}`}><img className='homeImage' src={image.source} key={image.id}/></NavLink>
             )})}
 
 

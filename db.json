@@ -34,6 +34,30 @@
       "favoriteUsers": [
         1
       ]
+    },
+    {
+      "email": "natesothercodebot@yahoo.com",
+      "nickname": "natesothercodebot",
+      "picture": "https://s.gravatar.com/avatar/33f659062ee1e5fda5395f21972d47e4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fna.png",
+      "links": [],
+      "images": [],
+      "favoriteImages": [],
+      "favoriteUsers": [],
+      "id": 3
+    },
+    {
+      "email": "hello@vittles.com",
+      "nickname": "rmdashrfv",
+      "picture": "https://avatars.githubusercontent.com/u/7320418?v=4",
+      "links": [
+        "https://github.com/rmdashrfv"
+      ],
+      "images": [
+        12
+      ],
+      "favoriteImages": [],
+      "favoriteUsers": [],
+      "id": 4
     }
   ],
   "images": [
