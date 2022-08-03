@@ -2,8 +2,8 @@ import {useState} from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 
 
-const FavoritesButton = ({image}) => {
-  const [liked, setLiked] = useState(false)
+const FavoritesButton = ({image, startingEmoji}) => {
+  const [liked, setLiked] = useState(startingEmoji)
   const {isAuthenticated, loginWithRedirect } = useAuth0()
   // const [likeCount, setLikeCount] = useState(image.timesFavorited)
 

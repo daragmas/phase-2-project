@@ -2,7 +2,7 @@ import { useAuth0 } from "@auth0/auth0-react"
 import { NavLink } from "react-router-dom"
 import { useEffect } from "react"
 
-const NavBar = ({ onUserChange, curUser }) => {
+const NavBar = ({ onUserChange, curUser={} }) => {
 
     const { user, isAuthenticated } = useAuth0()
     // console.log('isAuth: ', isAuthenticated)
@@ -66,7 +66,7 @@ const NavBar = ({ onUserChange, curUser }) => {
             <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/search'>Search 🔎</NavLink>
             <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/'> Home </NavLink>
             <NavLink className='navButton' style={{color:'#E2DCC8'}} to='/user/1'> Test User Nav </NavLink>
-            {curUser? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink>:null}
+            {isAuthenticated? <NavLink to={`/user/${curUser.id}`}>Profile</NavLink>:null}
         </div>
     )
 

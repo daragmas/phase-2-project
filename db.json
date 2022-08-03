@@ -35,8 +35,6 @@
         1
       ]
     }
-
-
   ],
   "images": [
     {
@@ -46,7 +44,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 7,
+      "timesFavorited": 8,
       "imageOwner": 1
     },
     {
@@ -73,7 +71,8 @@
     {
       "source": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
       "tags": [
-        "new pup", "test"
+        "new pup",
+        "test"
       ],
       "timesFavorited": 18,
       "imageOwner": 1,
@@ -93,42 +92,56 @@
     {
       "timesFavorited": 5,
       "source": "https://mario.wiki.gallery/images/thumb/d/da/RoySSBU.png/1200px-RoySSBU.png",
-      "tags": ["top-tier"],
+      "tags": [
+        "top-tier"
+      ],
       "id": 11,
       "imageOwner": 4
     },
     {
       "timesFavorited": 16,
       "source": "https://cdn.wallpapersafari.com/54/75/md2icy.jpg",
-      "tags": ["truck"],
+      "tags": [
+        "truck"
+      ],
       "id": 12,
       "imageOwner": 2
     },
     {
       "timesFavorited": 99,
       "source": "https://wallpaperaccess.com/full/251618.jpg",
-      "tags": ["beach", "summer"],
+      "tags": [
+        "beach",
+        "summer"
+      ],
       "id": 13,
       "imageOwner": 1
     },
     {
       "timesFavorited": 200,
       "source": "https://img.labnol.org/di/high-quality-photo.jpg",
-      "tags": ["beach", "california"],
+      "tags": [
+        "beach",
+        "california"
+      ],
       "id": 14,
       "imageOwner": 1
     },
     {
       "timesFavorited": 42,
       "source": "https://images.pexels.com/photos/243757/pexels-photo-243757.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1",
-      "tags": ["camera"],
+      "tags": [
+        "camera"
+      ],
       "id": 15,
       "imageOwner": 2
     },
     {
       "timesFavorited": 19,
       "source": "https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "tags": ["camera"],
+      "tags": [
+        "camera"
+      ],
       "id": 16,
       "imageOwner": 1
     }
