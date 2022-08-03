@@ -50,22 +50,25 @@ const Search = () => {
 
     searchMatches = searchBy? (searchToggle? filterImages():filterUsers()):[]
     // console.log('searchmatches', searchMatches)
-    
+
     return (
-        <div>
+      <div>
+      
+        <div className='search'>
             <label htmlFor="searchbar">Search</label>
             <input id='searchbar' type='text' onChange={handleInputChange}/>
             <label htmlFor='search-toggle' className="switch">Search Users/Images
             <input id='search-toggle' type="checkbox" onChange={handleToggle}/>
             <span className="slider round"></span>
             </label>
-            <ul>
-                {searchMatches}
-            </ul>
         </div>
+        <div className='searchMatches'>
+        {searchMatches}
+        </div>
+      </div>
+
     )
 
 }
 
 export default Search
-

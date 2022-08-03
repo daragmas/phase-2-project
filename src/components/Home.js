@@ -1,5 +1,6 @@
 import UserProfile from "./UserProfile"
 import {useState, useEffect} from 'react'
+import { NavLink } from "react-router-dom"
 
 const Home = ({curUser})=>{
     // console.log("Home curUser", curUser)
@@ -14,18 +15,34 @@ const Home = ({curUser})=>{
       grabImages()
     }, [])
 
+    if(homeImage===[])return <h1>loading</h1>
+
   return(
+    <div className='homeScreen'>
+
+          <h1 className='h1'
+          style={{ color: '#E2DCC8',
+          fontVariant: 'small-caps',
+
+          width: '100vw',
+          height: '30vh',
+          fontSize: "1500%",
+          padding: 20,
+          marginTop: 0,
+          marginBottom: '20px'}}
+          >Albm</h1>
 
         <div className='homeImageDiv'>
-            <h1 style={{ color: 'white', fontVariant: 'small-caps', padding: 20 }}>Welcome to Albm!</h1>
 
-            {homeImage.map((image) => {
+
+            {homeImage.sort((a,b)=>a.timesFavorited > b.timesFavorited ? -1: 1).map((image) => {
               return(
-              <img className='homeImage' src={image.source} key={image.id}/>
+              <NavLink to={`user/${image.imageOwner}`}><img className='homeImage' src={image.source} key={image.id}/></NavLink>
             )})}
 
 
         </div>
+    </div>
 
 
     )
