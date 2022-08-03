@@ -3,7 +3,7 @@
     {
       "id": 1,
       "email": "admin@example.com",
-      "nickname": "theadmin",
+      "nickname": "TheAdmin",
       "picture": "https://image.petmd.com/files/2022-06/golden-retriever.jpg",
       "links": [
         "example.com",
@@ -34,31 +34,9 @@
       "favoriteUsers": [
         1
       ]
-    },
-    {
-      "email": "natesothercodebot@yahoo.com",
-      "nickname": "natesothercodebot",
-      "picture": "https://s.gravatar.com/avatar/33f659062ee1e5fda5395f21972d47e4?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fna.png",
-      "links": [],
-      "images": [],
-      "favoriteImages": [],
-      "favoriteUsers": [],
-      "id": 3
-    },
-    {
-      "email": "hello@vittles.com",
-      "nickname": "rmdashrfv",
-      "picture": "https://avatars.githubusercontent.com/u/7320418?v=4",
-      "links": [
-        "https://github.com/rmdashrfv"
-      ],
-      "images": [
-        12
-      ],
-      "favoriteImages": [],
-      "favoriteUsers": [],
-      "id": 4
     }
+
+
   ],
   "images": [
     {
@@ -68,7 +46,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 0,
+      "timesFavorited": 7,
       "imageOwner": 1
     },
     {
@@ -78,7 +56,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": -1,
+      "timesFavorited": 1,
       "imageOwner": 1
     },
     {
@@ -95,10 +73,9 @@
     {
       "source": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
       "tags": [
-        "new pup",
-        "test"
+        "new pup", "test"
       ],
-      "timesFavorited": 0,
+      "timesFavorited": 18,
       "imageOwner": 1,
       "id": 4
     },
@@ -110,29 +87,50 @@
         "test",
         "man"
       ],
-      "timesFavorited": 0,
+      "timesFavorited": 42,
       "imageOwner": 1
     },
     {
-      "timesFavorited": 0,
+      "timesFavorited": 5,
       "source": "https://mario.wiki.gallery/images/thumb/d/da/RoySSBU.png/1200px-RoySSBU.png",
-      "tags": [
-        "top-tier"
-      ],
+      "tags": ["top-tier"],
       "id": 11,
       "imageOwner": 4
     },
     {
-      "imageOwner": 2,
-      "timesFavorited": 0,
-      "tags": [
-        "does",
-        "image",
-        "owner",
-        "work?"
-      ],
-      "source": "test",
-      "id": 12
+      "timesFavorited": 16,
+      "source": "https://cdn.wallpapersafari.com/54/75/md2icy.jpg",
+      "tags": ["truck"],
+      "id": 12,
+      "imageOwner": 2
+    },
+    {
+      "timesFavorited": 99,
+      "source": "https://wallpaperaccess.com/full/251618.jpg",
+      "tags": ["beach", "summer"],
+      "id": 13,
+      "imageOwner": 1
+    },
+    {
+      "timesFavorited": 200,
+      "source": "https://img.labnol.org/di/high-quality-photo.jpg",
+      "tags": ["beach", "california"],
+      "id": 14,
+      "imageOwner": 1
+    },
+    {
+      "timesFavorited": 42,
+      "source": "https://images.pexels.com/photos/243757/pexels-photo-243757.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1",
+      "tags": ["camera"],
+      "id": 15,
+      "imageOwner": 2
+    },
+    {
+      "timesFavorited": 19,
+      "source": "https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "tags": ["camera"],
+      "id": 16,
+      "imageOwner": 1
     }
   ]
 }

@@ -3,6 +3,7 @@ import UserFaves from './UserFaves'
 import UserName from './UserName'
 import Links from './Links'
 import { useState } from 'react'
+import {NavLink} from 'react-router-dom'
 
 
 const UserInfo = ({ userData=[], onNewPhoto, curUser={} }) => {
@@ -47,11 +48,27 @@ const UserInfo = ({ userData=[], onNewPhoto, curUser={} }) => {
   return (
     <>
       <div className='userInfoDiv'>
-        <ProfPic userProfPic={userData.picture} />
-        <UserName userNickname={userData.nickname} />
-        <Links userLinks={userData.links} />
+
+        <NavLink to={'/'}><h1
+        className='h1user'
+        style={{ color: '#E2DCC8',
+        fontVariant: 'small-caps',
+        fontSize: "50px",
+        padding: 20,
+        marginTop: 0,
+        marginBottom: '20px'}}
+        >Albm</h1></NavLink>
+
+        <ProfPic userProfPic={userData.picture}/>
+        <UserName userNickname={userData.nickname}/>
+        <Links userLinks={userData.links}/>
         {/* <UserFaves userFavorites={userData.favoriteImages}/> */}
-        {userData.id === curUser.id?<NewPhotoForm/>:null}
+        {/*NOTE: ADD THAT ONLY LOGGED IN USERS CAN ADD PHOTOS */}
+        <form id='newPhotoForm' onSubmit={newPhotoBtn}>
+          <input type="text" name="source" onChange={handleNewPhotoInfo} value={newPhoto.source} placeholder='Photo url...'/>
+          <input type="text" name="tags" onChange={handleNewPhotoInfo} value={newPhoto.tags} placeholder='Photo tags...'/>
+          <button className='button' type='submit'>Post New Photo</button>
+        </form>
       </div>
 
     </>

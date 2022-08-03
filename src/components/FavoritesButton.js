@@ -30,7 +30,7 @@ const handleClick = async () => {
 
   return(
 
-      <span className='button' style={{color: 'red'}} onClick={handleClick}>{liked ? FULL_HEART : EMPTY_HEART}</span>
+      <span className='button' style={{color: 'red', fontSize: '50px'}} onClick={handleClick}>{liked ? FULL_HEART : EMPTY_HEART}</span>
 
   )
 }
