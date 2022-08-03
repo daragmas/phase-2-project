@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom'
 
 const UserProfile = ({ curUser }) => {
     const [userData, setUserData] = useState(null)
-    const [replaceThis, setReplaceThis] = useState()
+    const [addedPhoto, setAddedPhoto] = useState()
     let params = useParams()
     // console.log("userId from params:", params.userId)
     console.log('currentUser',curUser)
@@ -18,10 +18,10 @@ const UserProfile = ({ curUser }) => {
             setUserData(res)
         }
         getData()
-    }, [])
+    }, [params])
 
     function handleAddPhoto(newPhoto) {
-        setReplaceThis(newPhoto)
+        setAddedPhoto(newPhoto)
     }
 
     if(!userData)return <h1>Loading</h1>
@@ -29,7 +29,7 @@ const UserProfile = ({ curUser }) => {
     return (
         <div>
             <UserInfo userData={userData} onNewPhoto={handleAddPhoto} curUser={curUser} />
-            <UserPics userId={params.userId} dummyData={replaceThis} />
+            <UserPics userId={params.userId} addedPhoto={addedPhoto} />
         </div>
     )
 }

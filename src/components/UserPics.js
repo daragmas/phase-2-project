@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import ImageCard from './ImageCard'
 
-const UserPics = ({userId, dummyData}) => {
+const UserPics = ({userId, addedPhoto}) => {
   const[allImages, setAllImages] = useState([])
 
   // const [userImages, setUserImages] = useState([])
@@ -18,7 +18,7 @@ const UserPics = ({userId, dummyData}) => {
 
   let userImagesArray = allImages.filter((image) => image.imageOwner == userId ? image : null)
 
-  if(dummyData) userImagesArray.push(dummyData)
+  if(addedPhoto) userImagesArray.push(addedPhoto)
 
   console.log('userimages',userImagesArray)
 
