@@ -44,9 +44,9 @@ const Search = () => {
         const data = (allImages.filter((image) => image.tags.includes(searchBy.toLowerCase()) ? image : null))
         return (data.map((image) => {
             return (
-                <li key={image.id}>
-                    <img src={image.source} className='search-image' href={`/user/${image.imageOwner}`} />
-                </li>
+                <a href={`/user/${image.imageOwner}`} key={image.id}>
+                    <img src={image.source} className='search-image' />
+                </a>
             )
         }))
     }
