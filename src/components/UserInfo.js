@@ -41,9 +41,9 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
       <form id='newPhotoForm' onSubmit={newPhotoBtn}>
         <button type='submit'>New Photo</button>
         <label>Photo Url</label>
-        <input type="text" name="source" onChange={handleNewPhotoInfo} value={newPhoto.source} />
+        <input type="text" name="source" onSubmit={handleNewPhotoInfo} value={newPhoto.source} />
         <label>Tags</label>
-        <input type="text" name="tags" onChange={handleNewPhotoInfo} value={newPhoto.tags} />
+        <input type="text" name="tags" onSubmit={handleNewPhotoInfo} value={newPhoto.tags} />
       </form>)
   }
 
