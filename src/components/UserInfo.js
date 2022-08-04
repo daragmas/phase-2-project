@@ -17,7 +17,7 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
   if (userData == []) return <h1>Loading...</h1>
 
   const handleNewPhotoInfo = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const key = e.target.name
     const value = e.target.value.includes(',') ? (e.target.value).split(',') : e.target.value
     setNewPhoto({ ...newPhoto, [key]: value })
@@ -34,16 +34,15 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
       body: JSON.stringify(newPhoto)
     });
     onNewPhoto(newPhoto)
+    setNewPhoto({ ...newPhoto, source: '', tags: [] })
   }
 
   const NewPhotoForm = () => {
     return (
-      <form id='newPhotoForm' onSubmit={newPhotoBtn}>
+      <form key='newPhotoForm' id='newPhotoForm' onSubmit={newPhotoBtn}>
         <button type='submit'>New Photo</button>
-        <label>Photo Url</label>
-        <input type="text" name="source" onSubmit={handleNewPhotoInfo} value={newPhoto.source} />
-        <label>Tags</label>
-        <input type="text" name="tags" onSubmit={handleNewPhotoInfo} value={newPhoto.tags} />
+        <input key='sourceInput' type="text" name="source" onChange={handleNewPhotoInfo} value={newPhoto.source} placeholder='Input photo URL...'/>
+        <input key='tagInput' type="text" name="tags" onChange={handleNewPhotoInfo} value={newPhoto.tags} placeholder='Input tags...'/>
       </form>)
   }
 
@@ -67,7 +66,7 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
         <UserName userNickname={userData.nickname} />
         <Links userLinks={userData.links} />
         {/* <UserFaves userFavorites={userData.favoriteImages}/> */}
-        {userData.id === curUser.id ? <NewPhotoForm /> : null}
+        {userData.id === curUser.id ? NewPhotoForm() : null}
       </div>
 
     </>

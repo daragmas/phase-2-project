@@ -66,7 +66,9 @@
       "picture": "https://img.freepik.com/premium-photo/bright-hot-air-balloons-sky-cappadocia-turkey_109800-19009.jpg",
       "links": [],
       "images": [],
-      "favoriteImages": [],
+      "favoriteImages": [
+        5
+      ],
       "favoriteUsers": [],
       "id": 6
     }
@@ -121,7 +123,7 @@
         "test",
         "man"
       ],
-      "timesFavorited": 42,
+      "timesFavorited": 43,
       "imageOwner": 1
     },
     {
@@ -216,6 +218,32 @@
       ],
       "source": "https://www.iliketowastemytime.com/sites/default/files/shipwreck-beach-hd-wallpaper.jpg",
       "id": 20
+    },
+    {
+      "imageOwner": 1,
+      "timesFavorited": 0,
+      "tags": [],
+      "id": 21
+    },
+    {
+      "imageOwner": 6,
+      "timesFavorited": 0,
+      "tags": [
+        "fish",
+        " water"
+      ],
+      "source": "https://www.wallpapertip.com/wmimgs/81-817985_iphone-golden-fish.jpg",
+      "id": 25
+    },
+    {
+      "imageOwner": 6,
+      "timesFavorited": 0,
+      "tags": [
+        "space",
+        " sky"
+      ],
+      "source": "https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-2.jpg",
+      "id": 26
     }
   ]
 }
