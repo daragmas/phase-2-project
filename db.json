@@ -67,7 +67,9 @@
       "links": [],
       "images": [],
       "favoriteImages": [
-        5
+        5,
+        4,
+        13
       ],
       "favoriteUsers": [],
       "id": 6
@@ -86,7 +88,7 @@
     },
     {
       "id": 2,
-      "source": "https://images.dog.ceo/breeds/entlebucher/n02108000_1516.jpg",
+      "source": "https://wallpaperaccess.com/full/546539.jpg",
       "tags": [
         "dog",
         "test"
@@ -111,7 +113,7 @@
         "new pup",
         "test"
       ],
-      "timesFavorited": 20,
+      "timesFavorited": 21,
       "imageOwner": 1,
       "id": 4
     },
@@ -145,14 +147,14 @@
       "imageOwner": 2
     },
     {
-      "timesFavorited": 99,
+      "timesFavorited": 100,
       "source": "https://wallpaperaccess.com/full/251618.jpg",
       "tags": [
         "beach",
         "summer"
       ],
       "id": 13,
-      "imageOwner": 1
+      "imageOwner": 2
     },
     {
       "timesFavorited": 201,
@@ -162,7 +164,7 @@
         "california"
       ],
       "id": 14,
-      "imageOwner": 1
+      "imageOwner": 4
     },
     {
       "timesFavorited": 42,
@@ -180,7 +182,7 @@
         "camera"
       ],
       "id": 16,
-      "imageOwner": 1
+      "imageOwner": 5
     },
     {
       "timesFavorited": 29,
@@ -220,12 +222,6 @@
       "id": 20
     },
     {
-      "imageOwner": 1,
-      "timesFavorited": 0,
-      "tags": [],
-      "id": 21
-    },
-    {
       "imageOwner": 6,
       "timesFavorited": 0,
       "tags": [
@@ -244,6 +240,131 @@
       ],
       "source": "https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-2.jpg",
       "id": 26
+    },
+    {
+      "timesFavorited": 2,
+      "source": "https://www.smashbros.com/assets_v2/img/fighter/roy/ss_2.jpg",
+      "tags": [
+        "top-tier"
+      ],
+      "id": 27,
+      "imageOwner": 4
+    },
+    {
+      "timesFavorited": 1,
+      "source": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/08/SSBU_Roy_2-(1).jpg",
+      "tags": [
+        "top-tier"
+      ],
+      "id": 28,
+      "imageOwner": 4
+    },
+    {
+      "timesFavorited": 0,
+      "source": "https://gamebanana.com/mods/embeddables/174870?variant=sd_image",
+      "tags": [
+        "top-tier"
+      ],
+      "id": 29,
+      "imageOwner": 4
+    },
+    {
+      "timesFavorited": 0,
+      "source": "https://pbs.twimg.com/media/D9TtHswU0AAOjWy.png",
+      "tags": [
+        "top-tier"
+      ],
+      "id": 30,
+      "imageOwner": 4
+    },
+    {
+      "timesFavorited": 0,
+      "source": "https://i.pinimg.com/originals/17/7b/b8/177bb891daa465c04aa2543ce5cce22a.png",
+      "tags": [
+        "top-tier"
+      ],
+      "id": 31,
+      "imageOwner": 4
+    },
+    {
+      "id": 32,
+      "source": "https://www.myfreewalls.com/public/uploads/preview/lonely-sad-snow-dog-4k-wallpaper-11625368240i4xvolijj2.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 88,
+      "imageOwner": 1
+    },
+    {
+      "id": 33,
+      "source": "https://wallpaper.dog/large/5439198.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 48,
+      "imageOwner": 1
+    },
+    {
+      "id": 34,
+      "source": "https://wallpapershome.com/images/wallpapers/dog-2560x1440-5k-4k-wallpaper-puppy-black-underwater-funny-animal-pet-1533.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 68,
+      "imageOwner": 1
+    },
+    {
+      "id": 35,
+      "source": "https://wallpaperaccess.com/full/769133.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 28,
+      "imageOwner": 1
+    },
+    {
+      "id": 36,
+      "source": "https://wallpaperaccess.com/full/1650990.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 28,
+      "imageOwner": 2
+    },
+    {
+      "id": 37,
+      "source": "https://i.pinimg.com/736x/53/85/92/538592bf136859c1686f377b749c88d8.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 78,
+      "imageOwner": 2
+    },
+    {
+      "id": 38,
+      "source": "https://i.pinimg.com/originals/7b/ea/04/7bea04b109e4d0806389fefb659305f2.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 18,
+      "imageOwner": 2
+    },
+    {
+      "id": 39,
+      "source": "https://wallpapercave.com/wp/wp9283531.jpg",
+      "tags": [
+        "dog",
+        "test"
+      ],
+      "timesFavorited": 68,
+      "imageOwner": 2
     }
   ]
 }

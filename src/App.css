@@ -73,7 +73,11 @@
 .ImageCard {
   display: flex;
   height: 400px;
-  width: auto;
+  max-width: 500px;
+
+  overflow:hidden;
+  object-fit: cover;
+
   align-content: space-between;
   margin: 25px;
   flex-wrap: wrap;
