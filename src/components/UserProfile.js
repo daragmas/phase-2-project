@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 
-const UserProfile = ({ curUser={} }) => {
+const UserProfile = ({ curUser = {}, onLike }) => {
     const [userData, setUserData] = useState(null)
     const [addedPhoto, setAddedPhoto] = useState()
     let params = useParams()
@@ -29,7 +29,7 @@ const UserProfile = ({ curUser={} }) => {
     return (
         <div>
             <UserInfo userData={userData} onNewPhoto={handleAddPhoto} curUser={curUser} />
-            <UserPics userId={params.userId} addedPhoto={addedPhoto} curUserLikedpics={curUser.favoriteImages} />
+            <UserPics userId={params.userId} addedPhoto={addedPhoto} curUser={curUser} onLike={onLike}/>
         </div>
     )
 }

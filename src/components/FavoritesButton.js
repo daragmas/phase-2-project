@@ -2,7 +2,7 @@ import {useState} from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 
 
-const FavoritesButton = ({image, startingEmoji}) => {
+const FavoritesButton = ({image, startingEmoji, onHeartClick}) => {
   const [liked, setLiked] = useState(startingEmoji)
   const {isAuthenticated, loginWithRedirect } = useAuth0()
   // const [likeCount, setLikeCount] = useState(image.timesFavorited)
@@ -23,14 +23,19 @@ const handleClick = async () => {
     body: JSON.stringify({ timesFavorited: newLikes })
   });
   const res = await req.json();
-  console.log(res)
-
+  // console.log(res)
+  onHeartClick()
   setLiked(!liked)
 }
 
   return(
 
-      <span className='button' style={{color: 'red', fontSize: '50px'}} onClick={handleClick}>{liked ? FULL_HEART : EMPTY_HEART}</span>
+      <span 
+        className='button' 
+        style={{color: 'red', fontSize: '50px'}} 
+        onClick={handleClick}>
+          {liked ? FULL_HEART : EMPTY_HEART}
+        </span>
 
   )
 }

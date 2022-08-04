@@ -22,6 +22,11 @@ const App = () => {
     console.log('UserChange')
   }
 
+  const handleLikedPhoto = async ()=>{
+    fetch(`http://localhost:3001/users/${currentUser.id}`)
+      .then((res)=>res.json())
+        .then((json)=>setCurrentUser(json))
+  }
 
   return (
     <div>
@@ -29,7 +34,7 @@ const App = () => {
       < Routes >
         <Route exact path='/' element={<Home />}></Route>
         <Route path='/search/' element={<Search />}></Route>
-        <Route path='/user' element={<UserProfile curUser={currentUser} />}>
+        <Route path='/user' element={<UserProfile curUser={currentUser} onLike={handleLikedPhoto}/>}>
           <Route path=':userId' element={<UserProfile />}></Route>
         </Route>
       </Routes>

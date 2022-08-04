@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import ImageCard from './ImageCard'
 
-const UserPics = ({ userId, addedPhoto, curUserLikedpics=[] }) => {
+const UserPics = ({ userId, addedPhoto, curUser = {}, onLike }) => {
   const[allImages, setAllImages] = useState([])
-  console.log('liked Pics', curUserLikedpics)
+  // console.log('liked Pics', curUserLikedpics)
 
   // const [userImages, setUserImages] = useState([])
 
@@ -28,7 +28,11 @@ const UserPics = ({ userId, addedPhoto, curUserLikedpics=[] }) => {
 
   return(
     <div className='imageContainer'>
-      {userImagesArray.map((image, index) =><ImageCard key={index} image={image} curUserLikedpics={curUserLikedpics}/>)}
+      {userImagesArray.map((image, index) => <ImageCard 
+        key={index} 
+        image={image} 
+        curUser={curUser} 
+        onLike={onLike }/>)}
     </div>
     
   )
