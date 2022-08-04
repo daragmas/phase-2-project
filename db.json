@@ -70,7 +70,12 @@
       "favoriteImages": [
         5,
         4,
-        13
+        13,
+        25,
+        1,
+        34,
+        14,
+        43
       ],
       "favoriteUsers": [],
       "id": 6
@@ -84,7 +89,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 11,
+      "timesFavorited": 12,
       "imageOwner": 1
     },
     {
@@ -158,7 +163,7 @@
       "imageOwner": 2
     },
     {
-      "timesFavorited": 201,
+      "timesFavorited": 202,
       "source": "https://img.labnol.org/di/high-quality-photo.jpg",
       "tags": [
         "beach",
@@ -183,7 +188,7 @@
         "camera"
       ],
       "id": 16,
-      "imageOwner": 5
+      "imageOwner": 6
     },
     {
       "timesFavorited": 29,
@@ -224,7 +229,7 @@
     },
     {
       "imageOwner": 6,
-      "timesFavorited": 0,
+      "timesFavorited": 1,
       "tags": [
         "fish",
         " water"
@@ -314,7 +319,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 68,
+      "timesFavorited": 69,
       "imageOwner": 1
     },
     {
@@ -366,6 +371,56 @@
       ],
       "timesFavorited": 68,
       "imageOwner": 2
+    },
+    {
+      "id": 40,
+      "source": "https://as2.ftcdn.net/v2/jpg/02/18/72/63/1000_F_218726328_JPGdhYAJmplB8gNbLEZUoyWD9oawokWy.jpg",
+      "tags": [
+        "computers",
+        "code"
+      ],
+      "timesFavorited": 78,
+      "imageOwner": 3
+    },
+    {
+      "id": 41,
+      "source": "https://t4.ftcdn.net/jpg/02/53/62/87/360_F_253628720_yOkqWyvDcizrpBc5XoytmHH2oXzYft3U.jpg",
+      "tags": [
+        "computers",
+        "code"
+      ],
+      "timesFavorited": 18,
+      "imageOwner": 3
+    },
+    {
+      "id": 42,
+      "source": "https://as1.ftcdn.net/v2/jpg/03/12/73/70/1000_F_312737008_2AaaMz17ttieKJ5t0kEg0mMAThC1S4PL.jpg",
+      "tags": [
+        "computers",
+        "code"
+      ],
+      "timesFavorited": 628,
+      "imageOwner": 3
+    },
+    {
+      "id": 43,
+      "source": "https://www.digitaltrends.com/wp-content/uploads/2017/12/LG-32UD99-4K-monitor-main1.jpg?p=1",
+      "tags": [
+        "computers",
+        "code"
+      ],
+      "timesFavorited": 49,
+      "imageOwner": 3
+    },
+    {
+      "id": 44,
+      "source": "https://store.hp.com/app/assets/images/uploads/prod/4k-gaming-pcs-hero1563813118549665.jpg",
+      "tags": [
+        "computers",
+        "code"
+      ],
+      "timesFavorited": 8,
+      "imageOwner": 3
     }
   ]
 }

@@ -17,7 +17,7 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
   if (userData == []) return <h1>Loading...</h1>
 
   const handleNewPhotoInfo = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const key = e.target.name
     const value = e.target.value.includes(',') ? (e.target.value).split(',') : e.target.value
     setNewPhoto({ ...newPhoto, [key]: value })

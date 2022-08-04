@@ -29,11 +29,30 @@ const ImageCard = ({ image, curUser, onLike }) => {
     onLike()
   }
 
+const [imageModalBool, setImageModalBool] = useState(false)
+const [imageModalClasses, setImageModalClasses] = useState('imageModal hidden')
+
+const showImageModal = () => {
+  setImageModalClasses( imageModalBool ? 'imageModal':'imageModal hidden')
+  setImageModalBool(!imageModalBool)
+  console.log('hi')
+}
+
+
   return (
+    <div className="bigDiv">
+
+    <div className={imageModalClasses}>
+    <img src={image.source} />
+    </div>
+
     <div className='divImageCard'>
-      <img className='ImageCard' src={image.source} />
+      <img onClick={showImageModal} className='ImageCard' src={image.source} />
       <FavoritesButton image={image} startingEmoji={isLiked} onHeartClick={handleHeartClick}/>
     </div>
+
+    </div>
+
   )
 }
 
