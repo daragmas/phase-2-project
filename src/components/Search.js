@@ -30,10 +30,13 @@ const Search = () => {
         const data = allUsers.filter((user) => user.nickname.toLowerCase().includes(searchBy.toLowerCase()) ? user : null)
         return (data.map((user) => {
             return (
-                <li key={user.id}>
-                    <img src={user.picture} className='search-image' href={`/user/${user.id}`} />
-                    <NavLink to={`/user/${user.id}`}>{user.nickname}</NavLink>
-                </li>
+                  <a href={`/user/${user.id}`}>
+                    <h4 className='userNickname' key={user.id}>
+                      {user.nickname}
+                      <img src={user.picture} className='search-image'  />
+                    </h4>
+                  </a>
+
             )
         }))
     }
@@ -53,7 +56,7 @@ const Search = () => {
 
     return (
       <div>
-      
+
         <div className='search'>
             <label htmlFor="searchbar">Search</label>
             <input id='searchbar' type='text' onChange={handleInputChange}/>
