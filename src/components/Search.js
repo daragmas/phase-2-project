@@ -31,7 +31,7 @@ const Search = () => {
         return (data.map((user) => {
             return (
                   <a href={`/user/${user.id}`}>
-                    <h4 className='userNickname' key={user.id}>
+                    <h4 style={{ color: 'rgb(226, 220, 200)'}}className='userNickname' key={user.id}>
                       {user.nickname}
                       <img src={user.picture} className='search-image'  />
                     </h4>

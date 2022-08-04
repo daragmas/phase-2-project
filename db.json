@@ -30,7 +30,8 @@
       "favoriteImages": [
         3,
         14,
-        2
+        2,
+        1
       ],
       "favoriteUsers": [
         1
@@ -83,7 +84,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 10,
+      "timesFavorited": 11,
       "imageOwner": 1
     },
     {
@@ -164,7 +165,7 @@
         "california"
       ],
       "id": 14,
-      "imageOwner": 4
+      "imageOwner": 3
     },
     {
       "timesFavorited": 42,
