@@ -50,7 +50,6 @@ const UserProfile = ({ curUser = {}, onLike }) => {
     const ImageModal = () => {
         return (
             <div className={imageModalInfo.classList}>
-            <div classname='imgDivBackdrop'></div>
                 <img className='imgModalImg' src={imageModalInfo.image} onClick={handleModalClick}/>
             </div>
 

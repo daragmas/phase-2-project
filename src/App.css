@@ -56,6 +56,8 @@
   flex-wrap: wrap;
   padding: 20px;
   margin: 0;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 .userNickname {
@@ -87,32 +89,30 @@
   border: 15px solid white;
   border-bottom-width: 60px;
   box-shadow: 0 0 0 3px gray;
+  cursor: pointer;
 }
 
-/* .ImageCard:hover {
-  transform: scale(1.05);
-} */
+form button{
+  background-color: white;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
 
+}
+input {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: white;
 
-/* .imgDivBackdrop {
-  z-index: 99;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  background-color: grey;
-  opacity: 50%;
-  height: 1000px;
-  width: 1000px;
+}
 
-} */
 
 .imageModal {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+
   z-index: 100;
   position: fixed;
   margin-left: auto;
@@ -120,13 +120,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
-  outline: 1000px solid rgba(0, 0, 0, 0.8);
-  /* left: 20%; */
 }
 
 .imgModalImg {
  width: 1000px;
  border: 15px solid white;
+ outline: 1000px solid rgba(0, 0, 0, 0.8);
+ background-color: black;
 }
 
 .hidden {
@@ -198,7 +198,7 @@
 }
 
 .homeImage {
-  height: 375px;
+  height: 275px;
   width: auto;
   align-content: space-between;
   transition: transform 0.75s;
@@ -222,6 +222,8 @@
   justify-content: center;
   /* background-color: #222831; */
   padding: 1%;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 .searchMatches {
@@ -244,6 +246,8 @@
   display: flex;
   justify-content: center;
   background-color: #F05454;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 .h1user {
