@@ -58,7 +58,9 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
             fontSize: "50px",
             padding: 20,
             marginTop: 0,
-            marginBottom: '20px'
+            marginBottom: '20px',
+            textDecoration: 'none'
+
           }}
         >Albm</h1></NavLink>
 

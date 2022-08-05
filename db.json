@@ -75,7 +75,8 @@
         1,
         34,
         14,
-        43
+        43,
+        36
       ],
       "favoriteUsers": [],
       "id": 6
@@ -339,7 +340,7 @@
         "dog",
         "test"
       ],
-      "timesFavorited": 28,
+      "timesFavorited": 29,
       "imageOwner": 2
     },
     {
@@ -421,6 +422,15 @@
       ],
       "timesFavorited": 8,
       "imageOwner": 3
+    },
+    {
+      "id": 45,
+      "source": "https://wallpaper.dog/large/10940914.jpg",
+      "tags": [
+        "nature"
+      ],
+      "timesFavorited": 118,
+      "imageOwner": 6
     }
   ]
 }
