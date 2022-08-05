@@ -93,11 +93,40 @@
   transform: scale(1.05);
 } */
 
+
+/* .imgDivBackdrop {
+  z-index: 99;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  background-color: grey;
+  opacity: 50%;
+  height: 1000px;
+  width: 1000px;
+
+} */
+
 .imageModal {
-  width: 90vw;
-  height: auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
   z-index: 100;
-  position:absolute;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  outline: 1000px solid rgba(0, 0, 0, 0.8);
+  /* left: 20%; */
+}
+
+.imgModalImg {
+ width: 1000px;
+ border: 15px solid white;
 }
 
 .hidden {

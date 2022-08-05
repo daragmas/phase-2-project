@@ -42,7 +42,7 @@ const UserProfile = ({ curUser = {}, onLike }) => {
     }
 
     const handleModalClick = () =>{
-        setImageModalInfo({ ...imageModalInfo, 
+        setImageModalInfo({ ...imageModalInfo,
             classList: 'imageModal hidden',
             display: !imageModalInfo.display })
     }
@@ -50,8 +50,10 @@ const UserProfile = ({ curUser = {}, onLike }) => {
     const ImageModal = () => {
         return (
             <div className={imageModalInfo.classList}>
-                <img src={imageModalInfo.image} onClick={handleModalClick}/>
+            <div classname='imgDivBackdrop'></div>
+                <img className='imgModalImg' src={imageModalInfo.image} onClick={handleModalClick}/>
             </div>
+
         )
     }
 
