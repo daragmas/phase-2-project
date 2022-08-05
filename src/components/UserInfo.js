@@ -12,7 +12,7 @@ const UserInfo = ({ userData = [], onNewPhoto, curUser = {} }) => {
     imageOwner: userData.id, timesFavorited: 0, tags: []
   })
 
-  console.log('User Data', userData)
+  // console.log('User Data', userData)
 
   if (userData == []) return <h1>Loading...</h1>
 

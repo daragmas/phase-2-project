@@ -9,7 +9,7 @@ const UserProfile = ({ curUser = {}, onLike }) => {
     const [addedPhoto, setAddedPhoto] = useState()
     let params = useParams()
     // console.log("userId from params:", params.userId)
-    console.log('currentUser',curUser)
+    // console.log('currentUser', curUser)
 
     useEffect(() => {
         const getData = async () => {
@@ -24,12 +24,52 @@ const UserProfile = ({ curUser = {}, onLike }) => {
         setAddedPhoto(newPhoto)
     }
 
-    if(!userData)return <h1>Loading</h1>
+    const [imageModalInfo, setImageModalInfo] = useState({
+        display: false,
+        classList: 'imageModal hidden',
+        image: ''
+    })
+
+    // console.log(imageModalInfo)
+
+    const handleModal = (clickedImage) => {
+        const classes = imageModalInfo.display ? 'imageModal' : 'imageModal hidden'
+        setImageModalInfo({
+            classList: classes,
+            display: !imageModalInfo.display,
+            image: clickedImage
+        })
+    }
+
+    const handleModalClick = () =>{
+        setImageModalInfo({ ...imageModalInfo, 
+            classList: 'imageModal hidden',
+            display: !imageModalInfo.display })
+    }
+
+    const ImageModal = () => {
+        return (
+            <div className={imageModalInfo.classList}>
+                <img src={imageModalInfo.image} onClick={handleModalClick}/>
+            </div>
+        )
+    }
+
+    if (!userData) return <h1>Loading</h1>
 
     return (
         <div>
-            <UserInfo userData={userData} onNewPhoto={handleAddPhoto} curUser={curUser} />
-            <UserPics userId={params.userId} addedPhoto={addedPhoto} curUser={curUser} onLike={onLike}/>
+            <UserInfo
+                userData={userData}
+                onNewPhoto={handleAddPhoto}
+                curUser={curUser} />
+            <UserPics
+                userId={params.userId}
+                addedPhoto={addedPhoto}
+                curUser={curUser}
+                onLike={onLike}
+                onImageClick={handleModal} />
+            <ImageModal />
         </div>
     )
 }

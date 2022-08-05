@@ -14,7 +14,7 @@ const App = () => {
 
   const [currentUser, setCurrentUser] = useState()
   const {user} = useAuth0
-  console.log(user)
+  // console.log(user)
 
   const handleUserChange = async (curUser) => {
     const test = await curUser

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import ImageCard from './ImageCard'
 
-const UserPics = ({ userId, addedPhoto, curUser = {}, onLike }) => {
+const UserPics = ({ userId, addedPhoto, curUser = {}, onLike, onImageClick }) => {
   const[allImages, setAllImages] = useState([])
   // console.log('liked Pics', curUserLikedpics)
 
@@ -21,7 +21,7 @@ const UserPics = ({ userId, addedPhoto, curUser = {}, onLike }) => {
 
   if(addedPhoto) userImagesArray.push(addedPhoto)
 
-  console.log('userimages',userImagesArray)
+  // console.log('userimages',userImagesArray)
 
 
   // console.log(dummyData)
@@ -32,7 +32,8 @@ const UserPics = ({ userId, addedPhoto, curUser = {}, onLike }) => {
         key={index} 
         image={image} 
         curUser={curUser} 
-        onLike={onLike }/>)}
+        onLike={onLike }
+        onImageClick={onImageClick}/>)}
     </div>
     
   )
